@@ -1,1 +1,1 @@
-# astro-kaminsky.github.io
+# astrokaminsky.github.io
