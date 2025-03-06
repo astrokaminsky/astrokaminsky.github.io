@@ -19,8 +19,9 @@
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+            background: url('header-image.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 60px 20px;
         }
 
         nav ul {
@@ -60,6 +61,13 @@
         a:hover {
             text-decoration: underline;
         }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -76,14 +84,15 @@
     
     <section id="about">
         <h2>About Me</h2>
+        <img src="your-profile-image.jpg" alt="Profile Picture">
         <p>Hello! I'm a student passionate about astrophysics and coding.</p>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li>Project 1: Analyzing galaxy clustering</li>
-            <li>Project 2: MCMC fitting for power spectra</li>
+            <li>Project 1: Analyzing galaxy clustering <br> <img src="project1-image.jpg" alt="Project 1"></li>
+            <li>Project 2: MCMC fitting for power spectra <br> <img src="project2-image.jpg" alt="Project 2"></li>
         </ul>
     </section>
     
@@ -98,4 +107,5 @@
     </footer>
 </body>
 </html>
+
 
