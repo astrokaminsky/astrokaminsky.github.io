@@ -43,3 +43,11 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.image-container {
+  display: flex;            /* makes images appear side by side horizontally */
+  flex-wrap: wrap;          /* allows them to wrap if the container is too narrow */
+  justify-content: center;  /* center them horizontally within the container */
+  gap: 1rem;                /* spacing between each image */
+  margin-top: 1rem;         /* some space above the image group */
+}
