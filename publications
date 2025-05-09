@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications | Aidan Kaminsky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Publications</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Side Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="publications">
+    <h2>First Author Works</h2>
+    <!-- Same list from your original page -->
+  </section>
+
+  <section>
+    <h2>Co-Authored Works</h2>
+    <!-- Same list -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aidan Kaminsky</p>
+  </footer>
+</body>
+</html>
