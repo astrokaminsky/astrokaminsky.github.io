@@ -2,95 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Website</title>
+  <title>About | Aidan Kaminsky</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    /* Import LaTeX-style font (Computer Modern) */
-    @import url('https://fonts.googleapis.com/css2?family=CMU+Serif:wght@400;700&family=CMU+Sans-Serif:wght@400;700&display=swap');
-
-    body {
-      font-family: 'CMU Serif', serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: white;
-    }
-
-    header {
-      background: url('header-image.jpg') no-repeat center center;
-      background-size: cover;
-      padding: 60px 20px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 50px;
-      font-family: 'CMU Serif', serif;
-    }
-
-    footer {
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 10px;
-      width: 100%;
-    }
-
-    h1, h2, p, ul {
-      font-family: 'CMU Serif', serif;
-    }
-
-    a {
-      color: #ffcc00;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #ff6600;
-    }
-
-    img {
-      max-width: 80%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
-
-    .image-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .image-container img {
-      max-width: 50%;
-      margin: 0;
-    }
-
-    .publication-list, .project-list {
-      list-style-type: upper-roman;
-      padding-left: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -98,98 +12,18 @@
     <h1>Welcome to My Website</h1>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#side-projects">Side Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Side Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ============ ABOUT SECTION ============ -->
   <section id="about">
     <h2>About Me</h2>
     <img src="your-profile-image.jpg" alt="Profile Picture">
-    <p>
-      Hello! My name is Aidan Kaminsky and I am currently a PhD candidate 
-      at the University of Miami. I work under the supervision of Dr. Nico Cappelluti, where I 
-      study the anisotropies of the Cosmic Infrared Background (CIB). The CIB is the integrated emission 
-      from star formation, black hole accretion, and other luminous activities occurring from early times until today. 
-      Understanding the spatial distribution of galaxies hidden in the CIB provides insights into their co-evolution in large-scale structures. 
-      <br><br>
-      This page is dedicated to my past and ongoing research projects, as well as computational side projects that others may find interesting. Enjoy!
-    </p>
-  </section>
-
-  <!-- ============ PUBLICATIONS SECTION ============ -->
-  <section id="publications">
-    <h2>First Author Works</h2>
-    <ol class="publication-list">
-      <li>
-        <strong>On the 3D Curvature and Dynamics of the Musca Filament</strong>:
-        <a href="https://doi.org/10.3847/1538-4357/acc462" target="_blank">
-          DOI: 10.3847/1538-4357/acc462
-        </a>
-        <div class="image-container">
-          <img src="Fig_3_Kaminsky2023.jpg" alt="Musca Project Image">
-        </div>
-      </li>
-      <li>
-        <strong>Tracing high-z Galaxies in X-rays with JWST and Chandra</strong>:
-        <a href="https://doi.org/10.48550/arXiv.2502.09705" target="_blank">
-          DOI: 10.48550/arXiv.2502.09705
-        </a>
-        <div class="image-container">
-          <img src="Fig_3_Kaminsky2025.jpg" alt="JWST Project Image">
-        </div>
-      </li>
-    </ol>
-  </section>
-
-  <section id="publications">
-    <h2>Co-Authored Works</h2>
-    <ol class="publication-list">
-      <li>
-        <strong>COSMOS-Web: The Role of Galaxy Interactions and Disk Instabilities in Producing Starbursts at z < 4</strong>:
-        <a href="https://doi.org/10.3847/1538-4357/ada566" target="_blank">
-          DOI: 10.3847/1538-4357/ada566
-        </a>
-      </li>
-      <li>
-        <strong>Clumps as multiscale structures in cosmic noon galaxies</strong>:
-        <a href="https://doi.org/10.1093/mnras/stae2781" target="_blank">
-          DOI: 10.1093/mnras/stae2781
-        </a>
-      </li>
-      <li>
-        <strong>Crimson Behemoth: A massive clumpy structure hosting a dusty AGN at z = 4.91</strong>:
-        <a href="https://doi.org/10.1093/pasj/psae091" target="_blank">
-          DOI: 10.1093/pasj/psae091
-        </a>
-      </li>
-    </ol>
-  </section>
-
-  <!-- ============ SIDE PROJECTS SECTION ============ -->
-  <section id="side-projects">
-    <h2>Side Projects</h2>
-    <ul class="project-list">
-      <li>
-        <strong>Monte Carlo Simulations for CIB Anisotropies</strong>:
-        <p>Testing different methods of modeling CIB anisotropies using simulated datasets.</p>
-      </li>
-      <li>
-        <strong>Custom Jupyter Notebook for Bonnor-Ebert Mass</strong>:
-        <p>An educational Jupyter Notebook to help students understand and numerically derive the Bonnor-Ebert mass.</p>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ============ CONTACT SECTION ============ -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: ajk324@miami.edu</p>
-    <p>GitHub: <a href="https://github.com/astrokaminsky" target="_blank">github.com/astrokaminsky</a></p>
+    <p>...your About Me text here...</p>
   </section>
 
   <footer>
@@ -197,5 +31,4 @@
   </footer>
 </body>
 </html>
-
 
