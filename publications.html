@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <style>
-    * {
-      font-family: 'Merriweather', serif !important;
-    }
-  </style>
-  <style>
-  #publications p {
-    text-align: left !important;
+  /* Apply Merriweather font to everything */
+  * {
+    font-family: 'Merriweather', serif !important;
   }
-  </style>
+
+  /* Left-align only the main body text */
+  #publications {
+    text-align: left !important;
+    margin: 0 auto;
+    max-width: 900px; /* optional: makes reading easier */
+    padding: 20px;
+  }
+
+  /* Optional: ensure h1/header/nav stays centered */
+  header, header h1, nav {
+    text-align: center;
+  }
+</style>
 
 </head>
 
