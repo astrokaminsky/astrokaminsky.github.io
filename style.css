@@ -1,12 +1,18 @@
-/* Import LaTeX-style font (Computer Modern) */
-@import url('https://fonts.googleapis.com/css2?family=CMU+Serif:wght@400;700&family=CMU+Sans-Serif:wght@400;700&display=swap');
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
-    font-family: 'CMU Serif', serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: #fefefe;
 }
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
 
 header {
     background-color: #333;
