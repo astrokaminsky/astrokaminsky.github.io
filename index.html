@@ -19,36 +19,6 @@
       line-height: 1.6;
       margin-bottom: 1em;
     }
-
-    #about {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        max-width: 1000px;
-        margin: 50px auto;
-        padding: 20px;
-        gap: 100px; /* space between text and image */
-      }
-
-
-    #about-img figure {
-    margin: 0;
-    text-align: center;
-      }
-    
-    #about-img img {
-      width: 400px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    #about-text {
-      flex: 1.2;
-      text-align: left;
-      padding-right: 20px;
-    }
-
     
     #about-img figcaption {
       font-size: 0.9em;
@@ -57,6 +27,33 @@
       font-style: italic;
     }
 
+    #about {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;  /* pushes items to far edges */
+      max-width: 1400px;               /* increase overall container width */
+      margin: 50px auto;
+      padding: 0 40px;                 /* small side padding to keep from touching edge */
+      gap: 0;                          /* gap not needed since we’ll space manually */
+    }
+    
+    #about-text {
+      flex: 1;
+      max-width: 600px;
+      text-align: left;
+    }
+    
+    #about-img {
+      flex: 0 0 auto;                  /* prevent shrinking */
+      margin-left: 60px;              /* extra separation */
+    }
+    
+    #about-img img {
+      width: 500px;
+      height: auto;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
