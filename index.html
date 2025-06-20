@@ -5,65 +5,81 @@
   <title>About Me | Aidan Kaminsky</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Use Georgia for font */
+    * {
+      font-family: 'Georgia', serif !important;
+    }
+
+    header, header h1, nav, footer {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+
+    #about {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      gap: 30px; /* space between text and image */
+    }
+
+    #about-text {
+      flex: 2;
+      text-align: left;
+    }
+
+    #about-img {
+      flex: 1;
+    }
+
+    #about-img img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-<style>
-  /* Apply Merriweather font to everything */
-  * {
-    font-family: 'Georgia', serif !important;
-  }
-
-  header, header h1, nav, footer {
-    text-align: center;
-  }
-
-  p {
-  line-height: 1.6;        /* Increases spacing between lines */
-  margin-bottom: 1em;      /* Adds space between paragraphs */
-  }
-
-
-  #about {
-    text-align: center;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-  }
-
-  #about img {
-    width: 200px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-</style>
-
 <body>
   <header class="header-with-bg">
     <h1>About Me</h1>
     <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="talks.html">Talks</a></li>
-      <li><a href="Aidan_Kaminsky_CV.pdf" target="_blank">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="Aidan_Kaminsky_CV.pdf" target="_blank">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section id="about">
-    <p>
-      Hello! My name is Aidan Kaminsky and I am currently a PhD candidate 
-      at the University of Miami. I work under the supervision of Dr. Nico Cappelluti, where I 
-      study the anisotropies of the Cosmic Infrared Background, or CIB. The CIB is the integrated emission 
-      from star formation, black hole accretion, and other luminous activities 
-      occuring from early times until the present today. Understanding the spatial distribution of galaxies hidden in the 
-      CIB provide insights as to how they affect and co-evolve in their large-scale structures. To investigate these physics I use 
-      theoretical models and data from the James Webb Space Telescope, Spitzer, and Chandra. Before beginning my PhD work, I spent a year 
-      studying under Postdoctoral fellow Lars Bonne at the SOFIA Science Center, where I modelled the dynamics of the Musca filamentary cloud, a pristine string-like structure 
-      in the interstellar medium that is early in its gravitational fragmentation. While these projects seem (and are!) very different, the connection lies in the physics of star formation. 
-      What physics processes drive the evolution of star formation? How do large-scale structures, supermassive black hole feedback, etc. affect such processes? 
-      How did the physics of star formation look like in the early Universe? These are all questions that I am interested in addressing. This page is dedicated to past and on-going projects. Enjoy!
-</p>
+    <div id="about-text">
+      <p>
+        Hello! My name is Aidan Kaminsky and I am currently a PhD candidate 
+        at the University of Miami. I work under the supervision of Dr. Nico Cappelluti, where I 
+        study the anisotropies of the Cosmic Infrared Background, or CIB. The CIB is the integrated emission 
+        from star formation, black hole accretion, and other luminous activities 
+        occuring from early times until the present today. Understanding the spatial distribution of galaxies hidden in the 
+        CIB provide insights as to how they affect and co-evolve in their large-scale structures. To investigate these physics I use 
+        theoretical models and data from the James Webb Space Telescope, Spitzer, and Chandra. Before beginning my PhD work, I spent a year 
+        studying under Postdoctoral fellow Lars Bonne at the SOFIA Science Center, where I modelled the dynamics of the Musca filamentary cloud, a pristine string-like structure 
+        in the interstellar medium that is early in its gravitational fragmentation. While these projects seem (and are!) very different, the connection lies in the physics of star formation. 
+        What physics processes drive the evolution of star formation? How do large-scale structures, supermassive black hole feedback, etc. affect such processes? 
+        How did the physics of star formation look like in the early Universe? These are all questions that I am interested in addressing. This page is dedicated to past and on-going projects. Enjoy!
+      </p>
+    </div>
+    <div id="about-img">
+      <img src="Me_AirAndSpace.jpg" alt="Aidan Kaminsky at Air and Space Museum">
+    </div>
   </section>
 
   <footer>
@@ -71,4 +87,3 @@
   </footer>
 </body>
 </html>
-
